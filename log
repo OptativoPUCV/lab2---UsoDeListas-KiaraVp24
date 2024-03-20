@@ -133,3 +133,16 @@ Wed 20 Mar 2024 06:50:34 PM UTC:
  tests:  1|4
 total_score: 10/70
 0040c6f
+Wed 20 Mar 2024 06:53:22 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:73:14: error: expected ‘;’ before ‘}’ token
+   73 |   return suma
+      |              ^
+      |              ;
+   74 | }
+      | ~             
+Compilation failed
+54cdbd7
