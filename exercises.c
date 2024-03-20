@@ -52,7 +52,6 @@ List* crea_lista() {
 
   while (element != NULL) {
     element = popFront(L);
-    free(element);
   }
   
   return L;
