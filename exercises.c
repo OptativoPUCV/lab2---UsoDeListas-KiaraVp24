@@ -48,7 +48,11 @@ List* crea_lista() {
   for(int i = 1; i <= 10; i++){
     *(int*)elemento = i;
     pushBack(L, elemento);
-    next(L);
+  }
+
+  int* elemento = first(L);
+  while (elemento != NULL) {
+    elemento = next(L)
   }
   
   return L;
