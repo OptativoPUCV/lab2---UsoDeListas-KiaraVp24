@@ -52,7 +52,7 @@ List* crea_lista() {
 
   int* elemento = first(L);
   while (elemento != NULL) {
-    elemento = next(L)
+    elemento = next(L);
   }
   
   return L;

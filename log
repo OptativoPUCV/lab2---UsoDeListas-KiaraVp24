@@ -114,3 +114,16 @@ exercises.c:55:23: error: expected ‘;’ before ‘}’ token
       |   ~                    
 Compilation failed
 7445ac8
+Wed 20 Mar 2024 06:48:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:8: error: conflicting types for ‘elemento’; have ‘int *’
+   53 |   int* elemento = first(L);
+      |        ^~~~~~~~
+exercises.c:46:9: note: previous definition of ‘elemento’ with type ‘void *’
+   46 |   void* elemento = malloc(sizeof(int));
+      |         ^~~~~~~~
+Compilation failed
+00eb676
