@@ -204,3 +204,17 @@ Wed 20 Mar 2024 08:04:46 PM UTC:
  tests:  3|2
 total_score: 40/70
 b463f45
+Wed 20 Mar 2024 08:46:11 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:104:10: error: unused variable ‘elem’ [-Werror=unused-variable]
+  104 |    void *elem;
+      |          ^~~~
+exercises.c:103:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+  103 |    Stack *aux = create_stack();
+      |           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+7144626
