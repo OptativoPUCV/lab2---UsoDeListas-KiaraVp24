@@ -1,0 +1,11 @@
+Wed 20 Mar 2024 06:37:25 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:9: error: unused variable ‘element’ [-Werror=unused-variable]
+   46 |   void* element = malloc(sizeof(int));
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+92b3858

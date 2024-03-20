@@ -43,6 +43,7 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+  void* element = malloc(sizeof(int));
    return L;
 }
 
