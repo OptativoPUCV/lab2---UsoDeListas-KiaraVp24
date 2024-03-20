@@ -49,10 +49,6 @@ List* crea_lista() {
     *(int*)element = i;
     pushBack(L, element);
   }
-
-  while (element != NULL) {
-    element = popFront(L);
-  }
   
   return L;
 }
