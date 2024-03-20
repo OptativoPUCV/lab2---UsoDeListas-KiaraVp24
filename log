@@ -218,3 +218,9 @@ exercises.c:103:11: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7144626
+Wed 20 Mar 2024 08:57:58 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  3|2
+total_score: 40/70
+55a8236
