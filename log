@@ -969,3 +969,40 @@ exercises.c:131:15: error: invalid use of incomplete typedef ‘Stack’ {aka �
 cc1: all warnings being treated as errors
 Compilation failed
 e3afb41
+Wed 20 Mar 2024 09:30:56 PM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:33: error: expected statement before ‘)’ token
+  125 |   for (int i = 0; i < '\0'; i++)) {
+      |                                 ^
+exercises.c:125:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  125 |   for (int i = 0; i < '\0'; i++)) {
+      |   ^~~
+exercises.c:125:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  125 |   for (int i = 0; i < '\0'; i++)) {
+      |                                   ^
+exercises.c:126:23: error: ‘i’ undeclared (first use in this function)
+  126 |     caracter = cadena[i];
+      |                       ^
+exercises.c:126:23: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:127:96: error: expected statement before ‘)’ token
+  127 |     if (strcmp(caracter, "(") == 0 || strcmp(caracter, "[") == 0 || strcmp(caracter, "{") == 0)) {
+      |                                                                                                ^
+exercises.c:127:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  127 |     if (strcmp(caracter, "(") == 0 || strcmp(caracter, "[") == 0 || strcmp(caracter, "{") == 0)) {
+      |     ^~
+exercises.c:127:98: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  127 |     if (strcmp(caracter, "(") == 0 || strcmp(caracter, "[") == 0 || strcmp(caracter, "{") == 0)) {
+      |                                                                                                  ^
+exercises.c:130:36: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  130 |     if (strcmp(caracter, ")") == 0 && strcmp(top(pila), "(") == 0 || strcmp(caracter, "]") == 0 && strcmp(top(pila), "[") == 0|| strcmp(caracter, "}") == 0 && strcmp(top(pila), "{") == 0) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from test.c:5:
+exercises.c:130:157: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  130 |     if (strcmp(caracter, ")") == 0 && strcmp(top(pila), "(") == 0 || strcmp(caracter, "]") == 0 && strcmp(top(pila), "[") == 0|| strcmp(caracter, "}") == 0 && strcmp(top(pila), "{") == 0) {
+      |                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+002d95d
