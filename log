@@ -1386,3 +1386,16 @@ exercises.c:136:106: error: invalid type argument of unary ‘*’ (have ‘int�
       |                                                                                                          ^~~~
 Compilation failed
 3ca7ee9
+Sat 23 Mar 2024 07:12:30 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:26: error: called object ‘top’ is not a function or function pointer
+  135 |       char *top = (char*)top(pila);
+      |                          ^~~
+exercises.c:135:13: note: declared here
+  135 |       char *top = (char*)top(pila);
+      |             ^~~
+Compilation failed
+0bd023d
