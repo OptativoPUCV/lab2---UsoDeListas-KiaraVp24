@@ -1324,3 +1324,23 @@ exercises.c:135:20: error: initialization of ‘char’ from ‘void *’ makes 
 cc1: all warnings being treated as errors
 Compilation failed
 f2091a4
+Sat 23 Mar 2024 07:08:41 PM UTC: 
+ exercises.c | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:26: error: called object ‘top’ is not a function or function pointer
+  135 |       char top = *(char*)top(pila);
+      |                          ^~~
+exercises.c:135:12: note: declared here
+  135 |       char top = *(char*)top(pila);
+      |            ^~~
+exercises.c:136:28: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |       if (cadena[i] == ')' && top != '(' || cadena[i] == ']' && top != '[' || cadena[i] == '}' && top != '{') {
+      |           ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+exercises.c:136:96: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |       if (cadena[i] == ')' && top != '(' || cadena[i] == ']' && top != '[' || cadena[i] == '}' && top != '{') {
+      |                                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cde901a
