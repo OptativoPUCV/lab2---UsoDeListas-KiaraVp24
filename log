@@ -1364,3 +1364,25 @@ exercises.c:136:96: error: suggest parentheses around ‘&&’ within ‘||’ [
 cc1: all warnings being treated as errors
 Compilation failed
 fd81fe2
+Sat 23 Mar 2024 07:11:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:26: error: called object ‘top’ is not a function or function pointer
+  135 |       char top = *(char*)top(pila);
+      |                          ^~~
+exercises.c:135:12: note: declared here
+  135 |       char top = *(char*)top(pila);
+      |            ^~~
+exercises.c:136:32: error: invalid type argument of unary ‘*’ (have ‘int’)
+  136 |       if ((cadena[i] == ')' && *top != '(') || (cadena[i] == ']' && *top != '[') || (cadena[i] == '}' && *top != '{')) {
+      |                                ^~~~
+exercises.c:136:69: error: invalid type argument of unary ‘*’ (have ‘int’)
+  136 |       if ((cadena[i] == ')' && *top != '(') || (cadena[i] == ']' && *top != '[') || (cadena[i] == '}' && *top != '{')) {
+      |                                                                     ^~~~
+exercises.c:136:106: error: invalid type argument of unary ‘*’ (have ‘int’)
+  136 |       if ((cadena[i] == ')' && *top != '(') || (cadena[i] == ']' && *top != '[') || (cadena[i] == '}' && *top != '{')) {
+      |                                                                                                          ^~~~
+Compilation failed
+3ca7ee9
