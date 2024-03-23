@@ -1418,3 +1418,13 @@ Sat 23 Mar 2024 07:14:16 PM UTC:
  tests:  5|1
 total_score: 50/70
 fd25ca4
+Sat 23 Mar 2024 07:19:25 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:142:11: error: expected expression before ‘Stack’
+  142 |   if (top(Stack *stack) != -1) {
+      |           ^~~~~
+Compilation failed
+949019a
