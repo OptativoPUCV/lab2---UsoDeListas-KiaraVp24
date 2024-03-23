@@ -1239,3 +1239,35 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 278ed77
+Sat 23 Mar 2024 06:57:57 PM UTC: 
+ exercises.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:124:16: error: ‘o’ undeclared (first use in this function)
+  124 |   for (int i = o; i < '\0'; i++) {
+      |                ^
+exercises.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:126:24: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  126 |       push(pila, cadena[i]);
+      |                  ~~~~~~^~~
+      |                        |
+      |                        char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:132:41: error: comparison between pointer and integer [-Werror]
+  132 |       if (cadena[i] == ')' && pop(pila) != '(') {
+      |                                         ^~
+exercises.c:135:41: error: comparison between pointer and integer [-Werror]
+  135 |       if (cadena[i] == ']' && pop(pila) != '[') {
+      |                                         ^~
+exercises.c:138:41: error: comparison between pointer and integer [-Werror]
+  138 |       if (cadena[i] == '}' && pop(pila) != '{') {
+      |                                         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+d019c48
