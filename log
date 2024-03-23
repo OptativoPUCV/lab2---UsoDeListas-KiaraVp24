@@ -1344,3 +1344,23 @@ exercises.c:136:96: error: suggest parentheses around ‘&&’ within ‘||’ [
 cc1: all warnings being treated as errors
 Compilation failed
 cde901a
+Sat 23 Mar 2024 07:09:08 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:26: error: called object ‘top’ is not a function or function pointer
+  135 |       char top = *(char*)top(pila);
+      |                          ^~~
+exercises.c:135:12: note: declared here
+  135 |       char top = *(char*)top(pila);
+      |            ^~~
+exercises.c:136:28: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |       if (cadena[i] == ')' && top != '(' || cadena[i] == ']' && top != '[' || cadena[i] == '}' && top != '{') {
+      |           ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+exercises.c:136:96: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |       if (cadena[i] == ')' && top != '(' || cadena[i] == ']' && top != '[' || cadena[i] == '}' && top != '{') {
+      |                                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fd81fe2
